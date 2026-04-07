@@ -15,14 +15,14 @@ Application web de gestion de tâches avec authentification, développée avec l
 - **Framework** : CodeIgniter 4
 - **Langage** : PHP 8.5
 - **Base de données** : MySQL
-- **Environnement** : Laragon (ou XAMPP/WAMP)
+- **Environnement** : Laragon
 
 ## 📋 Prérequis
 
 - PHP 8.2 ou supérieur
 - MySQL
 - Composer
-- Laragon (recommandé) ou XAMPP/WAMP
+- Laragon 
 
 ## 🔧 Installation
 
@@ -30,3 +30,7 @@ Application web de gestion de tâches avec authentification, développée avec l
 
 ```bash
 git clone https://github.com/Alabdulkader-Amin/taskmanager-codeigniter.git
+
+--
+
+##  Ouvrir le dossier
