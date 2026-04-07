@@ -32,7 +32,8 @@ Application web de gestion de tâches avec authentification, développée avec l
 git clone https://github.com/Alabdulkader-Amin/taskmanager-codeigniter.git
 ````
 1- **Créer un dossier nommé taskmanager_ci dans C:laragon/www/taskmanager (à changer le nome lors de clone par taskmanager_ci).
+--
 2- Dans le meme dossier ouvrir le terminal et tapper (composer install) cela permet d'installer .vendor.
 3- Ouvrir laragon (stat) -> base de donnée (gestionnaire de sessions) -> +ajouter pour créer base de donnée nommé : SIO.
-4- Retrouver le fichier nommé par database.sql copier le text coller dans "reque" puis exécuter.
+4- Retrouver le fichier nommé par database.sql copier le text coller dans "requête" puis exécuter.
 5- Le lien qui mène vers le sujet http://localhost:8080/taskmanager_ci/public/index.php/login
