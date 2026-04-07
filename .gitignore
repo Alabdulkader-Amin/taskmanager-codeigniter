@@ -1,0 +1,6 @@
+echo vendor/ > .gitignore
+echo .env >> .gitignore
+echo writable/logs/*.log >> .gitignore
+echo writable/cache/ >> .gitignore
+echo .DS_Store >> .gitignore
+echo Thumbs.db >> .gitignore
