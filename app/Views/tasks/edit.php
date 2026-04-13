@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Modifier</title>
+    <title>Modifier une tâche</title>
+    <link rel="stylesheet" href="/taskmanager_ci/public/css/style.css">
 </head>
-
 <body>
-    <h1>Modifier la tâche</h1>
-    <form method="POST">
-        <input type="text" name="title" value="<?= esc($task->title) ?>" required><br><br>
-        <textarea name="description"><?= esc($task->description ?? '') ?></textarea><br><br>
-        <select name="status">
-            <option value="en cours" <?= $task->status === 'en cours' ? 'selected' : '' ?>>En cours</option>
-            <option value="terminé" <?= $task->status === 'terminé' ? 'selected' : '' ?>>Terminé</option>
-        </select><br><br>
-        <button>Enregistrer</button>
-        <a href="<?= site_url('/') ?>">Annuler</a>
-    </form>
+    <div class="container">
+        <h1>Modifier la tâche</h1>
+        
+        <form method="POST" action="<?= site_url('/edit/'.$task->id) ?>">
+            <input type="text" name="title" value="<?= esc($task->title) ?>" required>
+            <textarea name="description" rows="3"><?= esc($task->description ?? '') ?></textarea>
+            
+            <select name="status">
+                <option value="en cours" <?= $task->status === 'en cours' ? 'selected' : '' ?>>En cours</option>
+                <option value="terminé" <?= $task->status === 'terminé' ? 'selected' : '' ?>>Terminé</option>
+            </select>
+            
+            <button type="submit">Enregistrer</button>
+            <a href="<?= site_url('/') ?>" class="lien-annuler">Annuler</a>
+        </form>
+    </div>
 </body>
-
 </html>
